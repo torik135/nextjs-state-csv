@@ -1,11 +1,7 @@
-import NavItem from "./NavItem"
-
-const Nav = () => {
+const Nav = ({children}) => {
     return (
         <nav className="nav">
-            <NavItem/>
-            <NavItem/>
-            <NavItem/>
+            {children}
         </nav>
     )
 }

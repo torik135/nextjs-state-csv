@@ -1,5 +1,6 @@
 import Text from "../Text"
 import Nav from "./Nav"
+import NavItem from "./NavItem"
 
 const Header = () => {
     return (
@@ -7,7 +8,11 @@ const Header = () => {
             <Text>
                 <h2>Header</h2>
             </Text>
-            <Nav/>
+            <Nav>
+                <NavItem/>
+                <NavItem/>
+                <NavItem/>
+            </Nav>
         </header>
     )
 }
