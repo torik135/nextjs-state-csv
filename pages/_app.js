@@ -4,11 +4,12 @@ import '../styles/var.css'
 import '../styles/header/header.css'
 import '../styles/header/nav.css'
 
+import '../styles/form/form.css'
+import '../styles/data/data.css'
+
 import '../styles/btn.css'
 import '../styles/box.css'
 import '../styles/container.css'
-import '../styles/data.css'
-import '../styles/form.css'
 import '../styles/footer.css'
 
 
