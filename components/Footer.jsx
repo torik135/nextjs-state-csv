@@ -1,7 +1,10 @@
+import Text from './Text'
 const Footer = () => {
     return (
         <footer className="footer">
-            Footer
+            <Text>
+                Footer
+            </Text>
         </footer>
     )
 }

@@ -1,12 +1,12 @@
-import Heading from "./Heading"
+import Text from "../Text"
 import Nav from "./Nav"
 
 const Header = () => {
     return (
         <header className="header">
-            <Heading>
+            <Text>
                 <h2>Header</h2>
-            </Heading>
+            </Text>
             <Nav/>
         </header>
     )
