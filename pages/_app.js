@@ -12,6 +12,7 @@ import '../styles/box.css'
 import '../styles/container.css'
 import '../styles/footer.css'
 
+import '../styles/media/mobile.css'
 
 
 function MyApp({ Component, pageProps }) {
