@@ -8,6 +8,8 @@ import DataList from './data/DataList'
 import AddData from './data/AddData'
 import Text from './Text'
 
+import SaveCSV from './save/SaveCSV'
+
 import dataList from '../data/data'
 
 const Container = () => {
@@ -48,8 +50,10 @@ const Container = () => {
             
                 <Box flex={1} height="400px">
                     <Text>
-                        text
+                        <h4>Help</h4>
                     </Text>
+                    <h4/>
+                    <SaveCSV data={data}/>
                 </Box>
             </div>
             
