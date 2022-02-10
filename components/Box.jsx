@@ -1,6 +1,6 @@
-const Box = ({children}) => {
+const Box = ({children, flex}) => {
     return (
-        <div>
+        <div className="box" style={{flex: flex}}>
             {children}
         </div>
     )

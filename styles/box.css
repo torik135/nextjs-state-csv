@@ -1,0 +1,12 @@
+.box {
+  max-width: 500px;
+  /* margin: 30px auto; */
+  margin: var(--margin-web);
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid black;
+  padding: var(--padding-sm);
+  border-radius: 5px;
+  min-width: 300px;
+  max-width: 600px;
+}
