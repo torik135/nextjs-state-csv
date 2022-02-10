@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-csv-import",
+  "name": "nextjs-state-csv",
   "private": true,
   "scripts": {
     "dev": "next dev",
