@@ -1,8 +1,10 @@
 import {useState} from 'react'
 
-import Box from './Box'
 import Header from './header/Header'
 import Footer from './Footer'
+
+import Box from './Box'
+import Toast from './Toast'
 
 import DataList from './data/DataList'
 import AddData from './data/AddData'
@@ -14,6 +16,8 @@ import dataList from '../data/data'
 
 const Container = () => {
     const [data, setData] = useState(dataList)
+    const [toast, setToast] = useState(false)
+    const [toastText, setToastText] = useState('')
 
     const toggleCheck = (dataId) => {
         setData(data.map(
@@ -23,6 +27,8 @@ const Container = () => {
 
     const deleteFunc = (dataId) => {
         setData(data.filter((d) => d.dataId !== dataId))
+        setToast(true)
+        setToastText(`data id: ${dataId} deleted`)
     }
 
     const onAdd = (d) => {
@@ -30,10 +36,17 @@ const Container = () => {
         const newData = {dataId, ...d}
 
         setData([newData, ...data])
+        setToast(true)
+        setToastText(`data id: ${dataId} created`)
     }
 
     return (
         <div className="global-container">
+            {toast ? 
+                <Toast text={toastText} openToast={() => setToast(!toast)}/>
+            : null}
+
+
             <Header/>
 
             <div className="container">

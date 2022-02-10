@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/var.css'
+import '../styles/toast.css'
 
 import '../styles/header/header.css'
 import '../styles/header/nav.css'

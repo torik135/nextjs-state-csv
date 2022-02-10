@@ -1,0 +1,19 @@
+.toast {
+  position: fixed;
+  top: 50px;
+  left: 40%;
+
+  width: 200px;
+  height: 70px;
+
+  padding: 2rem 1rem;
+
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
