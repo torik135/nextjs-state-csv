@@ -43,7 +43,7 @@ const Form = ({onAdd}) => {
                     />
             </div>
             
-            <div className="form-control">
+            <div className="form-control form-control-check">
                 <label>Check</label>
                 <CheckBox
                     type="checkbox"

@@ -37,7 +37,7 @@ const Container = () => {
             <div className="container">
                 
                 
-                <Box flex={1}>
+                <Box flex={2}>
                     <Text>
                         <h4>FORM</h4>
                     </Text>
@@ -46,24 +46,32 @@ const Container = () => {
                 </Box>
             
             
+                <Box flex={1}>
+                    <Text>
+                        text
+                    </Text>
+                </Box>
+            </div>
             
-                <Box flex={2}>
+            <div className="container">
+
+                <Box flex={1} minWidth="100%">
                     <Text>
                         <h4>LIST</h4>
                     </Text>
                     <hr/>
                     {data.length > 0 ? 
                         <DataList
-                            datalist={data}
-                            onToggle={toggleCheck}
-                            onDelete={deleteFunc}
+                        datalist={data}
+                        onToggle={toggleCheck}
+                        onDelete={deleteFunc}
                         />
-                    
-                    : <p>no data</p>}
+                        
+                        : <p>no data</p>}
                 </Box>
                 
-
             </div>
+
             
 
             <Footer/>
