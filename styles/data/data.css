@@ -2,7 +2,6 @@
   background: lightcyan;
   margin: 5px;
   padding: var(--padding-sm);
-  cursor: pointer;
 }
 
 .data.bool {
