@@ -1,12 +1,24 @@
+import {useState} from 'react'
+
 import Box from './Box'
 import Header from './header/Header'
 import Footer from './Footer'
 
 import DataList from './form/DataList'
 import AddData from '../components/form/AddData'
-import Heading from './header/Heading'
+import Text from './Text'
+
+import dataList from '../data/data'
 
 const Container = () => {
+    const [data, setData] = useState(dataList)
+
+    const toggleBool = (dataId) => {
+        setData(data.map((d) => d.dataId == dataId ? {...d, check: !d.check} : d)
+        )
+        console.log(dataId)
+    }
+
     return (
         <div>
             <Header/>
@@ -15,9 +27,9 @@ const Container = () => {
                 
                 
                 <Box flex={1}>
-                    <Heading>
+                    <Text>
                         <h4>FORM</h4>
-                    </Heading>
+                    </Text>
                     <hr/>
                     <AddData/>
                 </Box>
@@ -25,11 +37,17 @@ const Container = () => {
             
             
                 <Box flex={2}>
-                    <Heading>
+                    <Text>
                         <h4>LIST</h4>
-                    </Heading>
+                    </Text>
                     <hr/>
-                    <DataList/>
+                    {data.length > 0 ? 
+                        <DataList
+                            datalist={data}
+                            onToggle={toggleBool}
+                        />
+                    
+                    : <p>no data</p>}
                 </Box>
                 
 
