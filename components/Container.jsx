@@ -53,6 +53,8 @@ const Container = () => {
                         <h4>INFO</h4>
                     </Text>
                     <hr/>
+
+                    <p>Works better on desktop view</p>
                         
                     <SaveCSV data={data}/>
                     
