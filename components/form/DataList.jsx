@@ -4,6 +4,8 @@ const DataList = () => {
     return (
         <div>
             <Data/>
+            <Data/>
+            <Data/>
         </div>
     )
 }
