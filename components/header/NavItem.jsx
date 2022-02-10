@@ -1,7 +1,9 @@
-const NavItem = () => {
+const NavItem = ({text}) => {
     return (
         <div>
-            NavItem
+            <p>
+                {text}
+            </p>
         </div>
     )
 }
