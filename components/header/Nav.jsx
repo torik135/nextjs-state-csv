@@ -2,11 +2,11 @@ import NavItem from "./NavItem"
 
 const Nav = () => {
     return (
-        <div>
+        <nav className="nav">
             <NavItem/>
             <NavItem/>
             <NavItem/>
-        </div>
+        </nav>
     )
 }
 
