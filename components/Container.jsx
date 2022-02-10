@@ -4,8 +4,8 @@ import Box from './Box'
 import Header from './header/Header'
 import Footer from './Footer'
 
-import DataList from './form/DataList'
-import AddData from '../components/form/AddData'
+import DataList from './data/DataList'
+import AddData from './data/AddData'
 import Text from './Text'
 
 import dataList from '../data/data'
@@ -14,17 +14,21 @@ const Container = () => {
     const [data, setData] = useState(dataList)
 
     const toggleCheck = (dataId) => {
-        setData(data.map((d) => d.dataId == dataId ? {...d, check: !d.check} : d)
+        setData(data.map(
+            (d) => d.dataId == dataId ? {...d, check: !d.check} : d)
         )
-        console.log(dataId)
     }
 
     const deleteFunc = (dataId) => {
         setData(data.filter((d) => d.dataId !== dataId))
-        console.log(dataId)
     }
 
-    console.log(deleteFunc)
+    const onAdd = (d) => {
+        const dataId = Math.floor(Math.random() * 10000) + 1
+        const newData = {dataId, ...d}
+
+        setData([...data, newData])
+    }
 
     return (
         <div>
@@ -38,7 +42,7 @@ const Container = () => {
                         <h4>FORM</h4>
                     </Text>
                     <hr/>
-                    <AddData/>
+                    <AddData onAdd={onAdd} />
                 </Box>
             
             
