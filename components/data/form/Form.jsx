@@ -52,6 +52,7 @@ const Form = ({onAdd}) => {
                     onChange={(e) => setCheck(e.currentTarget.checked)}
                     />
             </div>
+            <br/><br/>
 
             <input type="submit" value="submit" className="btn btn-block"/>
 
