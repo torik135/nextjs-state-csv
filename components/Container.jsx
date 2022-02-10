@@ -27,17 +27,17 @@ const Container = () => {
         const dataId = Math.floor(Math.random() * 10000) + 1
         const newData = {dataId, ...d}
 
-        setData([...data, newData])
+        setData([newData, ...data])
     }
 
     return (
-        <div>
+        <div className="global-container">
             <Header/>
 
             <div className="container">
                 
                 
-                <Box flex={2}>
+                <Box flex={2} height="400px">
                     <Text>
                         <h4>FORM</h4>
                     </Text>
@@ -46,7 +46,7 @@ const Container = () => {
                 </Box>
             
             
-                <Box flex={1}>
+                <Box flex={1} height="400px">
                     <Text>
                         text
                     </Text>
@@ -54,8 +54,8 @@ const Container = () => {
             </div>
             
             <div className="container">
-
-                <Box flex={1} minWidth="100%">
+    
+                <Box flex={1} minWidth="100%" height="500px">
                     <Text>
                         <h4>LIST</h4>
                     </Text>
