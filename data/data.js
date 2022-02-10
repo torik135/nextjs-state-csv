@@ -1,10 +1,22 @@
-const tododata = [
+const dataList = [
     {
         dataId: 1,
-        title: "torik135",
+        title: "initial data",
         text: "github.com/torik135",
-        reminder: true
+        check: true
+    },
+    {
+        dataId: 2,
+        title: "initial data",
+        text: "github.com/torik135",
+        check: false
+    },
+    {
+        dataId: 3,
+        title: "initial data",
+        text: "github.com/torik135",
+        check: true
     }
 ]
 
-export default tododata
+export default dataList
