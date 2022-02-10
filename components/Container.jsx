@@ -50,16 +50,18 @@ const Container = () => {
             
                 <Box flex={1} height="400px">
                     <Text>
-                        <h4>Help</h4>
+                        <h4>INFO</h4>
                     </Text>
-                    <h4/>
+                    <hr/>
+                        
                     <SaveCSV data={data}/>
+                    
                 </Box>
             </div>
             
             <div className="container">
     
-                <Box flex={1} minWidth="100%" height="500px">
+                <Box flex={1} minWidth="100%" height="550px">
                     <Text>
                         <h4>LIST</h4>
                     </Text>

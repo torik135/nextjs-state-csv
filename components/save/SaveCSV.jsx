@@ -10,14 +10,15 @@ const SaveCSV = ({data}) => {
                 data={data}
                 filename="data_download.csv"
                 target="_blank"
-            >
+                >
+                <p>{data.length} data to download</p>
                 <Button
                     text="save CSV"
                     color="blue"
                 />
             </CSVLink>
             
-            : <p>no data</p>}
+            : <p>no data to download</p>}
         </div>
     )
 }
