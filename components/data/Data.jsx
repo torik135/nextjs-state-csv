@@ -16,7 +16,7 @@ const Data = ({datalist, onToggle, onDelete}) => {
                     onClick={() => onDelete(datalist.dataId)}
                     />
                 <Button
-                    text="check"
+                    text={datalist.check ? 'uncheck' : 'check'}
                     color="green"
                     textBtn="yellow"
                     textBtnSize="16px"
