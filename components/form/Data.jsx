@@ -1,6 +1,6 @@
 import Button from '../Button'
 
-const Data = ({datalist, onToggle}) => {
+const Data = ({datalist, onToggle, onDelete}) => {
     return (
         <div 
             className={`data ${datalist.check ? 'bool' : ''}`}
@@ -13,6 +13,7 @@ const Data = ({datalist, onToggle}) => {
                     color="red"
                     textBtn="yellow"
                     textBtnSize="16px"
+                    onClick={() => onDelete(datalist.dataId)}
                 />
                 </h4>
             <p>{datalist.text}</p>
