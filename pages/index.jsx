@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Container from '../components/Container'
 
 const Home = () => {
   return (
@@ -6,7 +7,8 @@ const Home = () => {
       <Head>
         <title>Save To CSV</title>
       </Head>
-      Home
+      
+      <Container/>
 	  </>
   )
 }
