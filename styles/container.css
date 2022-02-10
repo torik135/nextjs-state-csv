@@ -1,3 +1,7 @@
+.global-container {
+  margin: var(--margin-web);
+}
+
 .container {
   display: flex;
   justify-content: center;
