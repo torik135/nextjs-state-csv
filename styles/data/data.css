@@ -1,11 +1,13 @@
 .data {
-  background: lightcyan;
+  background: white;
   margin: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
   padding: var(--padding-sm);
 }
 
 .data.bool {
-  border-left: 5px solid green;
+  border-left: 5px solid black;
 }
 
 .data h4 {
