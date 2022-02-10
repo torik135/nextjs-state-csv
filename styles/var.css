@@ -1,0 +1,9 @@
+:root {
+  /* COLOR */
+  --bg-color: rgba(192, 192, 192, 1);
+  /* SIZE */
+  --padding-web: 2rem 1rem;
+  --padding-sm: 0.5rem 1rem;
+  --margin-web: 1rem;
+  --gap-web: 2rem;
+}
