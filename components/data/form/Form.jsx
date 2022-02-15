@@ -13,9 +13,11 @@ const Form = ({onAdd}) => {
 
         if(!title){
             alert('Form cannot be empty!')
+        } else {
+            onAdd({title, text, check})
         }
 
-        onAdd({title, text, check})
+        
 
         setTitle('')
         setText('')
