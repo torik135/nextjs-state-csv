@@ -1,9 +1,14 @@
 :root {
   /* COLOR */
   --bg-color: rgba(192, 192, 192, 1);
+  --color-green: rgba(137, 252, 133, 0.3);
+  --color-yellow: rgba(255, 249, 158, 0.3);
   /* SIZE */
   --padding-web: 2rem 1rem;
   --padding-sm: 0.5rem 1rem;
   --margin-web: 1rem;
   --gap-web: 2rem;
+
+  --shadow-sm: 0 0 5px rgba(99, 99, 99, 0.4);
+  --shadow-thin: 0 0 2px rgba(99, 99, 99, 0.4);
 }
