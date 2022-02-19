@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 
 import Header from './header/Header'
 import Footer from './Footer'
@@ -12,10 +12,18 @@ import Text from './Text'
 
 import SaveCSV from './save/SaveCSV'
 
-import dataList from '../data/data'
+//import dataList from '../data/data'
+// import Data from './data/Data'
+
+import { contextData } from '../context/DataContext'
+
 
 const Container = () => {
-    const [data, setData] = useState(dataList)
+
+    // const [data, setData] = useState(dataList)
+
+    const {data, setData} = useContext(contextData)
+
     const [toast, setToast] = useState(false)
     const [toastText, setToastText] = useState('')
 
@@ -83,7 +91,6 @@ const Container = () => {
                     <hr/>
                     {data.length > 0 ? 
                         <DataList
-                        datalist={data}
                         onToggle={toggleCheck}
                         onDelete={deleteFunc}
                         />
