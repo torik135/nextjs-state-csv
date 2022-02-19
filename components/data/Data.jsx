@@ -23,7 +23,7 @@ const Data = ({onToggle, onDelete}) => {
 		<div>
 		{data.map((datalist, index) => (
 		
-        <div className={`data ${datalist.check ? 'bool' : ''}`}>
+        <div className={`data ${datalist.check ? 'bool' : ''}`} key={index}>
             <h4>
                 {datalist.title} - {datalist.dataId} - {datalist.check ? 'true' : 'false'}
                 <Nav>
