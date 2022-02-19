@@ -1,8 +1,13 @@
-import Data from "./Data"
+import Data from './Data'
 
-const DataList = ({datalist, onToggle, onDelete}) => {
+const DataList = ({onToggle, onDelete}) => {
+	
+	
     return (
         <div>
+	{/*
+		
+
             {datalist.map((data, index) => (
                 <Data
                     key={index}
@@ -11,6 +16,11 @@ const DataList = ({datalist, onToggle, onDelete}) => {
                     onDelete={onDelete}
                 />
             ))}
+	*/}
+		<Data
+			onToggle={onToggle}
+			onDelete={onDelete}
+		/>
         </div>
     )
 }
